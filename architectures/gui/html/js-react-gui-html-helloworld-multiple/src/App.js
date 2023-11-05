@@ -1,8 +1,8 @@
+import { Init } from "./Init"
+
 function App() {
   return (
-    <div>
-      Hello World!
-    </div>
+    <Init/>
   );
 }
 
