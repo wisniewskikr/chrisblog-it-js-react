@@ -1,5 +1,6 @@
 import { useState } from "react"
-import helloWorld from './images/helloworld.jpg'
+import { Image } from "./Image";
+import { Name } from "./Name";
 import { Message } from "./Message";
 import { LinkCreate } from "./LinkCreate";
 import { LinkBack } from "./LinkBack";
@@ -14,15 +15,8 @@ function App() {
 
   return (
     <>
-      <div>
-        <img src={helloWorld} alt="Hello World"/>
-      </div>
-      <form>
-          <div>
-              <label for="name">Name:</label>
-              <input type="text" name="name" value={newName} onChange={e => setNewName(e.target.value)}/>
-          </div>
-      </form>
+      <Image />
+      <Name newName={newName} setNewName={setNewName} />
       {showMessage ? <Message newName={newName} /> : null}
       {showMessage ? <LinkBack hideMessage={hideMessage} clearName={clearName} /> : <LinkCreate displayMessage={displayMessage}/>}
     </>
