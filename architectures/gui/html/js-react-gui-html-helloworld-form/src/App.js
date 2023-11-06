@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import helloWorld from './images/helloworld.jpg'
 import "./css/helloworld.css"
 
@@ -14,6 +15,7 @@ function App() {
           </div>
       </form>
       <span id="message-text">Hello World</span>
+      <Link to="">Create</Link>
     </>
   );
 }
