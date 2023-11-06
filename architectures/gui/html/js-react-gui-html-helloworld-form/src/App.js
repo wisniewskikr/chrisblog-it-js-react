@@ -7,8 +7,10 @@ import { LinkBack } from "./LinkBack";
 function App() {
 
   const [showMessage, setShowMessage] = useState(false)
+  const [newName, setNewName] = useState("")
   const displayMessage = () => setShowMessage(true)
   const hideMessage = () => setShowMessage(false)
+  const clearName = () => setNewName("")
 
   return (
     <>
@@ -18,11 +20,11 @@ function App() {
       <form>
           <div>
               <label for="name">Name:</label>
-              <input type="text" name="name"/>
+              <input type="text" name="name" value={newName} onChange={e => setNewName(e.target.value)}/>
           </div>
       </form>
-      {showMessage ? <Message /> : null}
-      {showMessage ? <LinkBack hideMessage={hideMessage} /> : <LinkCreate displayMessage={displayMessage}/>}
+      {showMessage ? <Message newName={newName} /> : null}
+      {showMessage ? <LinkBack hideMessage={hideMessage} clearName={clearName} /> : <LinkCreate displayMessage={displayMessage}/>}
     </>
   );
 }

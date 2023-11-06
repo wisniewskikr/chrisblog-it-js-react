@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 
-export function LinkBack({ hideMessage }) {
+export function LinkBack({ hideMessage, clearName }) {
+
+  const onClick = () => {
+    hideMessage()
+    clearName()
+  }
 
   return (
-    <Link to="" onClick={hideMessage}>Back</Link>
+    <Link to="" onClick={onClick}>Back</Link>
   )
 
 }
