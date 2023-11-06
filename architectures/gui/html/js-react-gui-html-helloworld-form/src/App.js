@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { Link } from "react-router-dom";
 import helloWorld from './images/helloworld.jpg'
 import { Message } from "./Message";
+import { LinkCreate } from "./LinkCreate";
+import { LinkBack } from "./LinkBack";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
           </div>
       </form>
       {showMessage ? <Message /> : null}
-      <Link to="" onClick={displayMessage}>Create</Link>
+      {showMessage ? <LinkBack hideMessage={hideMessage} /> : <LinkCreate displayMessage={displayMessage}/>}
     </>
   );
 }
