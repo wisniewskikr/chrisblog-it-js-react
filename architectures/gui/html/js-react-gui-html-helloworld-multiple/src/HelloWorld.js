@@ -1,15 +1,11 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { Init } from "./Init";
+import { Link } from "react-router-dom";
 
 export function HelloWorld() {
 
   return (
     <>
       <div>Hello World!</div>
-      <Link to="/">Back</Link>
-      <Routes>
-        <Route path="/" element={ <Init /> }/>
-      </Routes>
+      <Link to="/">Back</Link>      
     </>
   )
   
