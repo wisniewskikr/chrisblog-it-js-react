@@ -1,8 +1,10 @@
+import helloWorld from './images/helloworld.jpg'
+
 function App() {
   return (
     <>
       <div>
-        <img src="/images/helloworld.jpg" alt="Hello World"/>
+        <img src={helloWorld} alt="Hello World"/>
       </div>
       <form>
           <div>
