@@ -1,4 +1,5 @@
 import helloWorld from './images/helloworld.jpg'
+import "./css/helloworld.css"
 
 function App() {
   return (
