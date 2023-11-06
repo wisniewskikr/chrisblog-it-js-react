@@ -1,8 +1,14 @@
+import { useState } from "react"
 import { Link } from "react-router-dom";
 import helloWorld from './images/helloworld.jpg'
-import "./css/helloworld.css"
+import { Message } from "./Message";
 
 function App() {
+
+  const [showMessage, setShowMessage] = useState(false)
+  const displayMessage = () => setShowMessage(true)
+  const hideMessage = () => setShowMessage(false)
+
   return (
     <>
       <div>
@@ -14,8 +20,8 @@ function App() {
               <input type="text" name="name"/>
           </div>
       </form>
-      <span id="message-text">Hello World</span>
-      <Link to="">Create</Link>
+      {showMessage ? <Message /> : null}
+      <Link to="" onClick={displayMessage}>Create</Link>
     </>
   );
 }
