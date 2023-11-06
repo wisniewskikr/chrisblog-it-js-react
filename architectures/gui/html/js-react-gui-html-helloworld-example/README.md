@@ -31,7 +31,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to an **form** application application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Form application means that HTML page contains form element. This application consists of HTML page which includes following frontend elements: **html**, **javascript**, **css** and **images**.
+The goal of this project is to present how to an **example** application application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of HTML page which includes following frontend elements: **html**, **javascript**, **css** and **images**.
 
 ##### Terminology
 Terminology explanation:
