@@ -1,10 +1,12 @@
+import { NavigationComponent } from "../components/NavigationComponent";
+
 export function CreatePage() {
 
   return (
-    <>      
-      <div>Create</div>
-    </>
-    
+    <>
+      <h4>Create Message</h4>
+      <NavigationComponent />
+    </>    
   )
 
 }

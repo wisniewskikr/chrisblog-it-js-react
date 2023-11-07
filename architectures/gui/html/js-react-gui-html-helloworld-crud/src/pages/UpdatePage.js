@@ -1,10 +1,12 @@
+import { NavigationComponent } from "../components/NavigationComponent";
+
 export function UpdatePage() {
 
   return (
-    <>      
-      <div>Update</div>
-    </>
-    
+    <>
+      <h4>Update Message</h4>
+      <NavigationComponent />
+    </>    
   )
 
 }

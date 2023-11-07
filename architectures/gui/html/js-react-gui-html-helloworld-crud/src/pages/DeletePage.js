@@ -1,10 +1,12 @@
+import { NavigationComponent } from "../components/NavigationComponent";
+
 export function DeletePage() {
 
   return (
-    <>      
-      <div>Delete</div>
-    </>
-    
+    <>
+      <h4>Delete Message</h4>
+      <NavigationComponent />
+    </>    
   )
 
 }

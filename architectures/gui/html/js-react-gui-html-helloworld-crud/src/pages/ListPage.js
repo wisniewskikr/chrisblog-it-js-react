@@ -6,8 +6,7 @@ export function ListPage() {
     <>
       <h4>List Messages</h4>
       <NavigationComponent />
-    </>
-    
+    </>    
   )
 
 }
