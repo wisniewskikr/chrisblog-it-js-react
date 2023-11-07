@@ -1,4 +1,5 @@
 import { NavigationComponent } from "../components/NavigationComponent";
+import { BackLink } from "../components/BackLink";
 
 export function UpdatePage() {
 
@@ -6,6 +7,7 @@ export function UpdatePage() {
     <>
       <h4>Update Message</h4>
       <NavigationComponent />
+      <BackLink />
     </>    
   )
 

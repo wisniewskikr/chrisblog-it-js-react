@@ -1,4 +1,5 @@
 import { NavigationComponent } from "../components/NavigationComponent";
+import { BackLink } from "../components/BackLink";
 
 export function DeletePage() {
 
@@ -6,6 +7,7 @@ export function DeletePage() {
     <>
       <h4>Delete Message</h4>
       <NavigationComponent />
+      <BackLink />
     </>    
   )
 
