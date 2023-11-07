@@ -1,14 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavigationComponent } from "../components/NavigationComponent";
 
 export function ListPage() {
 
   return (
     <>
-      <Link to="/create">Create</Link>
-      <Link to="/view">View</Link>
-      <Link to="/update">Update</Link>
-      <Link to="/delete">Delete</Link>
-      <div>List</div>
+      <h4>List Messages</h4>
+      <NavigationComponent />
     </>
     
   )
