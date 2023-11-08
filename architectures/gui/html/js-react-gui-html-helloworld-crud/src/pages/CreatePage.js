@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { TextComponent } from "../components/TextComponent";
+import { TextComponent as CreateContentComponent } from "../components/CreateContentComponent";
 import { BackLink } from "../components/BackLink";
 import { CreateLink } from "../components/CreateLink";
 
@@ -10,7 +10,7 @@ export function CreatePage({ addMessage }) {
   return (
     <>
       <h4>Create Message</h4>
-      <TextComponent newMessage={ newMessage } setNewMessage={ setNewMessage } />
+      <CreateContentComponent newMessage={ newMessage } setNewMessage={ setNewMessage } />
       <CreateLink addMessage={ addMessage } newMessage={ newMessage } />
       &nbsp;
       <BackLink />
