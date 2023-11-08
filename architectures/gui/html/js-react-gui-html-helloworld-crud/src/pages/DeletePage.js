@@ -8,7 +8,7 @@ export function DeletePage({ selectedMessage, setSelectedMessage, deleteMessage 
     <>
       <h4>Delete Message</h4>
       <DeleteContentComponent selectedMessage={ selectedMessage }/>
-      <DeleteLink selectedMessage={ selectedMessage } deleteMessage={ deleteMessage }/>
+      <DeleteLink selectedMessage={ selectedMessage } deleteMessage={ deleteMessage } setSelectedMessage={ setSelectedMessage } />
       &nbsp;
       <BackLink setSelectedMessage={ setSelectedMessage } />
     </>    
