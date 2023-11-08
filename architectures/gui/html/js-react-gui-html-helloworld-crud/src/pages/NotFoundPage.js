@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { BackLink } from "../components/BackLink";
 
-export function NotFoundPage() {
+export function NotFoundPage({ setSelectedMessage }) {
 
   return (
     <>
       <div>Page Not Found!</div>
-      <Link to="/">Back</Link>      
+      <BackLink setSelectedMessage={ setSelectedMessage } />     
     </>
   )
   

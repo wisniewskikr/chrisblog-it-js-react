@@ -1,11 +1,11 @@
 import { BackLink } from "../components/BackLink";
 
-export function DeletePage() {
+export function DeletePage({ setSelectedMessage }) {
 
   return (
     <>
       <h4>Delete Message</h4>
-      <BackLink />
+      <BackLink setSelectedMessage={ setSelectedMessage } />
     </>    
   )
 

@@ -3,7 +3,7 @@ import { TextComponent as CreateContentComponent } from "../components/CreateCon
 import { BackLink } from "../components/BackLink";
 import { CreateLink } from "../components/CreateLink";
 
-export function CreatePage({ addMessage }) {
+export function CreatePage({ addMessage, setSelectedMessage }) {
 
   const [newMessage, setNewMessage] = useState("")
 
@@ -13,7 +13,7 @@ export function CreatePage({ addMessage }) {
       <CreateContentComponent newMessage={ newMessage } setNewMessage={ setNewMessage } />
       <CreateLink addMessage={ addMessage } newMessage={ newMessage } />
       &nbsp;
-      <BackLink />
+      <BackLink setSelectedMessage={ setSelectedMessage } />
     </>    
   )
 

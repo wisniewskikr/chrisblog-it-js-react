@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-export function BackLink() {
+export function BackLink({ setSelectedMessage }) {
 
     return (
-        <Link to="/">Back</Link>   
+        <Link to="/" onClick={() => setSelectedMessage(null)}>Back</Link>   
     )
   
   }
