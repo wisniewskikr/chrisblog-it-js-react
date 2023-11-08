@@ -54,7 +54,7 @@ function App() {
 
   function updateMessage(id, text) {
 
-    return messages.map(message => {
+    messages.map(message => {
       if (message.id == id) {
         message.text = text
       }       
