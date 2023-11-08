@@ -11,6 +11,10 @@ function App() {
 
   // localStorage.setItem("MESSAGES", JSON.stringify([]))
 
+  const [selectedMessage, setSelectedMessage] = useState("")
+  
+  const [selectedMessageId, setSelectedMessageId] = useState("")
+
   const [messages, setMessages] = useState(() => {
     const localValue = localStorage.getItem("MESSAGES")
     if (localValue == null) return []
@@ -22,6 +26,11 @@ function App() {
     localStorage.setItem("MESSAGES", JSON.stringify(messages))
   }, [messages])
 
+  useEffect(() => {
+    const selectedMessage = getMessage(selectedMessageId)
+    setSelectedMessage(selectedMessage)
+  }, [selectedMessageId])
+
   function addMessage(message) {
     setMessages(currentMessages => {
       return [
@@ -31,12 +40,24 @@ function App() {
     })
   }
 
+  function getMessage(id) {
+
+    return messages.find(message => {
+      if (message.id == id) {
+        return message
+      } else {
+        return null
+      }      
+    })
+
+  }
+
   return (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={ <ListPage messages={ messages } /> } />
+            <Route path="/" element={ <ListPage messages={ messages } setSelectedMessageId={ setSelectedMessageId } /> } />
             <Route path="/create" element={ <CreatePage addMessage={addMessage}/> } />
-            <Route path="/view" element={ <ViewPage /> } />
+            <Route path="/view" element={ <ViewPage selectedMessage={ selectedMessage } /> } />
             <Route path="/update" element={ <UpdatePage /> } />
             <Route path="/delete" element={ <DeletePage /> } />
             <Route path="/*" element={ <NotFoundPage /> } />            

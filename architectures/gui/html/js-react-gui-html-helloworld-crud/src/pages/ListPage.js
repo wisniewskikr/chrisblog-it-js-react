@@ -1,7 +1,7 @@
 import { ListItemComponent } from "../components/ListItemComponent";
 import { NavigationComponent } from "../components/NavigationComponent";
 
-export function ListPage({ messages }) {  
+export function ListPage({ messages, setSelectedMessageId }) {  
 
   return (
     <>
@@ -16,6 +16,7 @@ export function ListPage({ messages }) {
             key={message.id}
             id={message.id}
             text={message.text}
+            setSelectedMessageId={setSelectedMessageId}
           />
         )
       })}
