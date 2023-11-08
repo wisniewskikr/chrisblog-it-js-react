@@ -1,4 +1,4 @@
-export function TextComponent( {newMessage, setNewMessage} ) {
+export function CreateContentComponent( {newMessage, setNewMessage} ) {
 
     return (
         <table>            

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { TextComponent as CreateContentComponent } from "../components/CreateContentComponent";
+import { CreateContentComponent } from "../components/CreateContentComponent";
 import { BackLink } from "../components/BackLink";
 import { CreateLink } from "../components/CreateLink";
 

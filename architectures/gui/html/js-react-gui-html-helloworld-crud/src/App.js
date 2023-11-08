@@ -58,7 +58,7 @@ function App() {
             <Route path="/" element={ <ListPage selectedMessage={selectedMessage} messages={ messages } setSelectedMessageId={ setSelectedMessageId } /> } />
             <Route path="/create" element={ <CreatePage addMessage={ addMessage } setSelectedMessage={ setSelectedMessage } /> } />
             <Route path="/view" element={ <ViewPage selectedMessage={ selectedMessage } setSelectedMessage={ setSelectedMessage } /> } />
-            <Route path="/update" element={ <UpdatePage setSelectedMessage={ setSelectedMessage } /> } />
+            <Route path="/update" element={ <UpdatePage selectedMessage={selectedMessage} setSelectedMessage={ setSelectedMessage } /> } />
             <Route path="/delete" element={ <DeletePage setSelectedMessage={ setSelectedMessage } /> } />
             <Route path="/*" element={ <NotFoundPage setSelectedMessage={ setSelectedMessage } /> } />            
         </Routes>
