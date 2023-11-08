@@ -9,6 +9,8 @@ import { DeletePage } from "./pages/DeletePage"
 
 function App() {
 
+  // localStorage.setItem("MESSAGES", JSON.stringify([]))
+
   const [messages, setMessages] = useState(() => {
     const localValue = localStorage.getItem("MESSAGES")
     if (localValue == null) return []
@@ -24,7 +26,7 @@ function App() {
     setMessages(currentMessages => {
       return [
         ...currentMessages,
-        { id: crypto.randomUUID(), message },
+        { id: crypto.randomUUID(), text: message },
       ]
     })
   }
@@ -32,7 +34,7 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={ <ListPage /> } />
+            <Route path="/" element={ <ListPage messages={ messages } /> } />
             <Route path="/create" element={ <CreatePage addMessage={addMessage}/> } />
             <Route path="/view" element={ <ViewPage /> } />
             <Route path="/update" element={ <UpdatePage /> } />
