@@ -1,3 +1,4 @@
+import { ViewContentComponent } from "../components/ViewContentComponent";
 import { BackLink } from "../components/BackLink";
 
 export function ViewPage({ selectedMessage }) {
@@ -5,8 +6,8 @@ export function ViewPage({ selectedMessage }) {
   return (
     <>
       <h4>View Message</h4>
-      <BackLink />
-      { selectedMessage.id }
+      <ViewContentComponent selectedMessage={ selectedMessage } />
+      <BackLink />      
     </>    
   )
 
