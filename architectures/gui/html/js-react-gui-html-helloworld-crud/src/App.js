@@ -11,7 +11,7 @@ function App() {
 
   // localStorage.setItem("MESSAGES", JSON.stringify([]))
 
-  const [selectedMessage, setSelectedMessage] = useState("")
+  const [selectedMessage, setSelectedMessage] = useState(null)
   
   const [selectedMessageId, setSelectedMessageId] = useState("")
 
@@ -55,7 +55,7 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={ <ListPage messages={ messages } setSelectedMessageId={ setSelectedMessageId } /> } />
+            <Route path="/" element={ <ListPage selectedMessage={selectedMessage} messages={ messages } setSelectedMessageId={ setSelectedMessageId } /> } />
             <Route path="/create" element={ <CreatePage addMessage={addMessage}/> } />
             <Route path="/view" element={ <ViewPage selectedMessage={ selectedMessage } /> } />
             <Route path="/update" element={ <UpdatePage /> } />

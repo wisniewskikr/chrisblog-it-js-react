@@ -1,12 +1,12 @@
 import { ListItemComponent } from "../components/ListItemComponent";
 import { NavigationComponent } from "../components/NavigationComponent";
 
-export function ListPage({ messages, setSelectedMessageId }) {  
+export function ListPage({ selectedMessage, messages, setSelectedMessageId }) {  
 
   return (
     <>
       <h4>List Messages</h4>
-      <NavigationComponent />
+      <NavigationComponent selectedMessage={selectedMessage} />
 
       {messages.length === 0 && "There is no messages yet"}
 
