@@ -11,7 +11,7 @@ export function CreatePage({ addMessage, setSelectedMessage }) {
     <>
       <h4>Create Message</h4>
       <CreateContentComponent newMessage={ newMessage } setNewMessage={ setNewMessage } />
-      <CreateLink addMessage={ addMessage } newMessage={ newMessage } />
+      <CreateLink addMessage={ addMessage } newMessage={ newMessage } setSelectedMessage={setSelectedMessage} />
       &nbsp;
       <BackLink setSelectedMessage={ setSelectedMessage } />
     </>    
