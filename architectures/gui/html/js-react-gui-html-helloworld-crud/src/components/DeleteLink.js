@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 export function DeleteLink({ selectedMessage, deleteMessage }) {
 
     const onClick = () => {
-        deleteMessage(selectedMessage.id)        
+        if( window.confirm( "Are you sure you want to delete this message?" ) ){
+            deleteMessage(selectedMessage.id)
+        }                
     }
 
     return (
