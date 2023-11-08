@@ -11,7 +11,7 @@ export function UpdatePage({ selectedMessage, setSelectedMessage, updateMessage 
     <>
       <h4>Update Message</h4>
       <UpdateContentComponent selectedMessage={ selectedMessage } newMessage={ newMessage } setNewMessage={ setNewMessage } />
-      <UpdateLink selectedMessage={selectedMessage} newMessage={newMessage} updateMessage={updateMessage}/>
+      <UpdateLink selectedMessage={selectedMessage} newMessage={newMessage} updateMessage={updateMessage} setSelectedMessage={ setSelectedMessage }/>
       &nbsp;
       <BackLink setSelectedMessage={ setSelectedMessage } />
     </>    
