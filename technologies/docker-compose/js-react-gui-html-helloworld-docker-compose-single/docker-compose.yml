@@ -2,8 +2,8 @@ version: '3'
 
 services:
   helloworld:
-    image: js-express-api-rest-helloworld-docker-compose-single-image
-    container_name: js-express-api-rest-helloworld-docker-compose-single-container
+    image: js-react-gui-html-helloworld-docker-compose-single-image
+    container_name: js-react-gui-html-helloworld-docker-compose-single-container
     build:
       context: ./
       dockerfile: Dockerfile
