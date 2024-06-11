@@ -1,10 +1,6 @@
 function App() {
 
-  if(2 > 1) {
-    return (<div>Hello World!</div>);
-  } else {
-    return (<div>False</div>);
-  }
+  return (2 > 1) ? (<div>Hello World!</div>) : (<div>False</div>);
   
 }
 
