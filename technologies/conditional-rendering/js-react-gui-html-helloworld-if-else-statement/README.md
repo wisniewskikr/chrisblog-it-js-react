@@ -25,10 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how use **conditional rendering** type **if-else operator** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
 
 ##### Terminology
 Terminology explanation:
+* **Conditional Rendering**: in React application it is used for rendering different content basing on some condition. For instance if A then render this but if B then render that.
+* **If-Else Operator**: this operator does one thing if condition is true. Otherwise it does second thing.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
