@@ -1,8 +1,8 @@
+import FunctionalComponentChildren from "./FunctionalComponentChildren";
+
 function FunctionalComponent() {
   return (
-    <div>
-      Hello World!
-    </div>
+    <FunctionalComponentChildren message="Hello World!"/>
   );
 }
 
