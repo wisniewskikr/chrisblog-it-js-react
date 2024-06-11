@@ -1,6 +1,6 @@
 function App() {
 
-  return (2 > 1) ? (<div>Hello World!</div>) : (<div>False</div>);
+  return (2 > 1) && (<div>Hello World!</div>);
   
 }
 
