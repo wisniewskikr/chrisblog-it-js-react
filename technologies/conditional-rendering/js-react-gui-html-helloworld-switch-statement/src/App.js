@@ -1,9 +1,13 @@
 function App() {
 
-  if(2 > 1) {
-    return (<div>Hello World!</div>);
-  } else {
-    return (<div>False</div>);
+  const value = 2;
+  switch(value) {
+    case 1:
+      return (<div>One</div>);
+    case 2:
+      return (<div>Hello World!</div>);
+    default:
+      return (<div>Default</div>);
   }
   
 }
