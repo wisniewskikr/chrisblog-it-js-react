@@ -1,13 +1,12 @@
 import { Component } from "react";
+import ClassComponentChildren from "./ClassComponentChildren";
 
 class ClassComponent extends Component {
 
   render() {
 
     return (
-      <div>
-        Hello World!
-      </div>
+      <ClassComponentChildren message="Hello World!"/>
     );
 
   }
