@@ -25,13 +25,11 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **props** with **spread operator** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to use **props** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
 
 ##### Terminology
 Terminology explanation:
 * **props**: in React enables passing a data from parent to children component;
-* **spread operator**: in React enables passong whole JavaScript class from parent to children component. Childred component has access to all atributes of this class. Spread operator is marked as **(...)**;
-* **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
