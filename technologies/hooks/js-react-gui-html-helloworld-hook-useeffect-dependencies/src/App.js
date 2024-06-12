@@ -3,11 +3,7 @@ import { useState, useEffect } from "react";
 function App() {
 
   const [id, setId] = useState(1);
-  const [count, setCount] = useState(0);
-
-  setInterval(function(){
-    setId(id + 1);
-  }, 1000);
+  const [count, setCount] = useState(0);  
 
   useEffect(() =>{
 
@@ -22,6 +18,10 @@ function App() {
     fetchData();
 
   }, [id]);  
+
+  setInterval(function(){
+    setId(id + 1);
+  }, 1000);
 
   return (
     <div>
