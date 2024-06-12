@@ -10,13 +10,13 @@ const AppRoute = () => (
         <nav>
             <ul>
                 <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/helloworld">Hello World</Link> </li>
+                <li> <Link to="/helloworld/stranger">Hello World</Link> </li>
             </ul>
         </nav>
 
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/helloworld" element={<HelloWorld/>} />
+            <Route path="/helloworld/:name" element={<HelloWorld/>} />
         </Routes>
 
     </div>    
