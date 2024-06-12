@@ -10,7 +10,8 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World number: {number}** message
+   * Expected **Hello World!** message in the browser
+   * Expected **Hello World number: 1!** message in the browser console (after some time neccessary for API loading)
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -25,12 +26,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **useState hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. 
+The goal of this project is to present how to use **useEffect hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Result of this hook is displayed on **console**.
 
 ##### Terminology
 Terminology explanation:
 * **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
-* **useState**: the useState hook enables functional components to manage state.
+* **useEffect**: the useEffect Hook in React is used to perform side effects in functional components. For example, data fetching from API, subscriptions or any other operation that needs to be performed after the component has been rendered.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
