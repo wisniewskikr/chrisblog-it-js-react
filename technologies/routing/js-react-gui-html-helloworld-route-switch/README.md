@@ -8,6 +8,8 @@ USAGE COMMANDS
 Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-route-switch`
 1. (Optional) In a command line install react router with `npm install react-router-dom`
+1. (Optional) In a command line install react router with `npm uninstall react-router-dom`
+1. (Optional) In a command line install react router with `npm install react-router-dom@5.2.0`
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
@@ -30,12 +32,16 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **routing** with **params** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+
+**Attention!**
+Switch does not work from **react-router-dom** in version **6**. It was replaced with **Router**.
+
+The goal of this project is to present how to use **routing** with **switch** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **Routing**: in React it's responsible for navigation between different pages. Because React uses Single Page Application so routing reloads only flexible content on this once loaded page.
-* **Params**: they enables passing information to pages. Params are part of URL.
+* **Switch**: Switch component ensures that only the first matching <Route> is rendered and rest are ignored.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
