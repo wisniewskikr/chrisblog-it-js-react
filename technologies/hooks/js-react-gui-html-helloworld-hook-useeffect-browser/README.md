@@ -10,8 +10,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World!** message in the browser
-   * Expected **Hello World number: 1!** message in the browser console (after some time neccessary for API loading)
+   * Expected **Hello World number 1!** message
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -26,7 +25,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **useEffect hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Result of this hook is displayed on **console**.
+The goal of this project is to present how to use **useEffect hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Result of this hook is displayed in the **browser**.
 
 ##### Terminology
 Terminology explanation:
