@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
 
-  const [count, setCount] = useState(0);  
+  useEffect(() =>{
 
-  setInterval(function(){
-    setCount(count + 1);
-  }, 1000);
+    const fetchData = async () => {
+
+      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      const result = await response.json();
+      console.log("Hello World number: " + result.id + "!");
+
+    };
+
+    fetchData();
+
+  }, []);
 
   return (
     <div>
-      Hello World number: {count}!
+      Hello World!
     </div>
   );
 
