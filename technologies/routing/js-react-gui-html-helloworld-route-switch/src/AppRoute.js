@@ -1,6 +1,6 @@
-import { Link, Route, Routes } from "react-router-dom";
-import Home from "./Home";
+import { Link, Route, Switch } from "react-router-dom";
 import HelloWorld from "./HelloWorld";
+import HelloWorldParam from "./HelloWorldParam";
 
 
 const AppRoute = () => (
@@ -9,15 +9,15 @@ const AppRoute = () => (
         
         <nav>
             <ul>
-                <li> <Link to="/">Home</Link> </li>
-                <li> <Link to="/helloworld/stranger">Hello World</Link> </li>
+                <li> <Link to="/">Hello World</Link> </li>
+                <li> <Link to="/stranger">Hello World with Parameter</Link> </li>
             </ul>
         </nav>
 
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/helloworld/:name" element={<HelloWorld/>} />
-        </Routes>
+        <Switch>
+            <Route path="/" element={<HelloWorld/>} />
+            <Route path="/:name" element={<HelloWorldParam/>} />
+        </Switch>
 
     </div>    
 
