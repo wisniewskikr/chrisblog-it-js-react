@@ -2,13 +2,18 @@ import { useState, useEffect } from "react";
 
 function App() {
 
+  const [id, setId] = useState(1);
   const [count, setCount] = useState(0);
+
+  setInterval(function(){
+    setId(id + 1);
+  }, 1000);
 
   useEffect(() =>{
 
     const fetchData = async () => {
 
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
       const result = await response.json();
       setCount(result.id);
 
@@ -16,7 +21,7 @@ function App() {
 
     fetchData();
 
-  }, []);
+  }, [id]);  
 
   return (
     <div>
