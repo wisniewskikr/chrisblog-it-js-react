@@ -14,7 +14,7 @@ Usage steps:
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
    * Expected **Hello World** page
-1. In a http browser click on link `Hello World`
+1. In a http browser click on link `Hello World with Parameters`
    * Expected **Hello World Params** page
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
