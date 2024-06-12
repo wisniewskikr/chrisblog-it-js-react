@@ -1,7 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom";
+import Home from "./Home";
+import HelloWorld from "./HelloWorld";
 
-const Home = () => <h2>Home</h2>;
-const HelloWorld = () => <h2>HelloWorld</h2>;
 
 const AppRoute = () => (
 
@@ -15,8 +15,8 @@ const AppRoute = () => (
         </nav>
 
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/helloworld" element={<HelloWorld />} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/helloworld" element={<HelloWorld/>} />
         </Routes>
 
     </div>    
