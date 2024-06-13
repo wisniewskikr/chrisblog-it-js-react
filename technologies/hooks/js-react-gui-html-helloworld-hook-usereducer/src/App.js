@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useReducer } from "react";
 
 function App() {
 
-  const [count, setCount] = useState(0);  
+  const fnReducer = (state, action) => {
+
+    switch(action.type) {
+      case "INCREMENT":
+        return {message: state.message, count: state.count + 1};
+      default:
+        return state;
+    }
+
+  };
+
+  const data = {message: 'Hello World number:', count: 0};
+  const [state, dispatch] = useReducer(fnReducer, data);
 
   setInterval(function(){
-    setCount(count + 1);
+    dispatch({ type: "INCREMENT" });
   }, 1000);
 
   return (
     <div>
-      Hello World number: {count}!
+      {state.message} {state.count}!
     </div>
   );
 
