@@ -1,23 +1,11 @@
-import { useState } from "react";
+import ParentComponent from "./ParentComponent";
 
 function App() {
 
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  }
-
   return (
-    <>
-      <div>
-        Hello World number: {count}!
-      </div>
-      <button onClick={increment}>
-        Click
-      </button>
-    </>
+    <ParentComponent/>
   );
+
 }
 
 export default App;
