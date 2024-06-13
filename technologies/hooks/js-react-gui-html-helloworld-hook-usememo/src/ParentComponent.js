@@ -11,10 +11,10 @@ function ParentComponent() {
 
   return (
     <>
-      <div>
-        Hello World number: {count}!
-      </div>
-      <ChildComponent onIncrement={increment}/>
+      <ChildComponent count={count}/>
+      <button onClick={increment}>
+        Click
+      </button>
     </>
   );
 }
