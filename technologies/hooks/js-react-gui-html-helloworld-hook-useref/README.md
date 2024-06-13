@@ -10,7 +10,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World** page
+   * Expected **Message:** and **Click** button. After clicking on the button expected **Message: Hello World!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -20,15 +20,19 @@ USAGE IMAGES
 
 ![My Image](readme-images/image-01.png)
 
+![My Image](readme-images/image-02.png)
+
 
 DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to use **hook** type **useRef** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
+* **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
+* **useRef**: The useRef hook is primarily used for accessing and interacting with the DOM elements.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
