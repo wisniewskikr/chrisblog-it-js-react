@@ -2,6 +2,7 @@ import { useReducer } from "react";
 
 function App() {
 
+  const data = {message: 'Hello World number:', count: 0};
   const fnReducer = (state, action) => {
 
     switch(action.type) {
@@ -12,8 +13,7 @@ function App() {
     }
 
   };
-
-  const data = {message: 'Hello World number:', count: 0};
+  
   const [state, dispatch] = useReducer(fnReducer, data);
 
   setInterval(function(){
