@@ -1,9 +1,16 @@
-function ChildComponent(props) {
+import { useContext } from "react";
+import MyContext from "./MyContext";
+
+function ChildComponent() {
+
+  const message = useContext(MyContext);
+
   return (
     <div>
-      {props.message}
+      {message}
     </div>
   );
+
 }
 
 export default ChildComponent;

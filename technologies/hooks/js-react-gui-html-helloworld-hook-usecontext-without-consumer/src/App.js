@@ -1,8 +1,12 @@
 import ChildComponent from "./ChildComponent";
+import MyContext from "./MyContext";
 
 function App() {
+  const message = "Hello World!";
   return (
-      <ChildComponent message="Hello World!" />
+      <MyContext.Provider value={message}>
+        <ChildComponent/>
+      </MyContext.Provider>
   );
 }
 
