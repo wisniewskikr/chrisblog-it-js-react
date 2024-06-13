@@ -25,11 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **props** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to use **hook** type **useContext** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Hook useContext does not use **consumer**. Instead it uses method **useContext**.
 
 ##### Terminology
 Terminology explanation:
-* **props**: in React enables passing a data from parent to children component;
+* **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
+* **useContext**: useContext in React provides a way to pass data from parent to child component without using props.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
