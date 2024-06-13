@@ -25,7 +25,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use an **action** type **onClick** by a **button** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use an **action** type **onClick** by a **button** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Action is **inherited** - it means that action is passed from Parent to Child component.
 
 ##### Terminology
 Terminology explanation:
