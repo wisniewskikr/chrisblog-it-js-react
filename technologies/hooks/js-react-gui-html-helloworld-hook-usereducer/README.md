@@ -25,12 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **useState hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. 
+The goal of this project is to present how to use **useReducer hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. 
 
 ##### Terminology
 Terminology explanation:
 * **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
-* **useState**: the useState hook enables functional components to manage state.
+* **useReducer**: useReducer() is an alternative to the useState() hook when dealing with complex state in your components.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
