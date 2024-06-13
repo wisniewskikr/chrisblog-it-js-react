@@ -25,12 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **useEffect hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Result of this hook is displayed in the **browser**.
+The goal of this project is to present how to use **useLayoutEffect hook** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Result of this hook is displayed in the **browser**.
 
 ##### Terminology
 Terminology explanation:
 * **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
-* **useEffect**: the useEffect Hook in React is used to perform side effects in functional components. For example, data fetching from API, subscriptions or any other operation that needs to be performed after the component has been rendered.
+* **useLayoutEffect**: the useLayoutEffect Hook in React is used to perform side effects in functional components. For example, data fetching from API, subscriptions or any other operation that needs to be performed after the component has been rendered. This hook is synchronous - opposite to useEffect which is asynchronous. It means that Component is not rendered until data from API is fetched. 
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
