@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
 
@@ -13,9 +14,9 @@ function App() {
       <div>
         Hello World number: {count}!
       </div>
-      <button onClick={increment}>
+      <Link onClick={increment}>
         Click
-      </button>
+      </Link>
     </>
   );
 }
