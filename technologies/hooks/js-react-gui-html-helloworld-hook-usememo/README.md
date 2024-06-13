@@ -25,11 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use an **action** type **onClick** by a **button** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework. Action is **inherited** - it means that action is passed from Parent to Child component.
+The goal of this project is to present how to use a **hook** type **useMemo** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
-* **onClick**: it's an action performed on some HTML element. In this case the action is performed on a button.
+* **Hook**: React Hooks are inbuilt functions provided by React that allow functional components to use state and lifecycle features.
+* **useMemo**: the useMemo hook is a performance optimization function that memorizes the result of a computation. In other words it should be used for heavy functions which are not changed very often. These functions are done once and results are memorized and used during rerendering of Components.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
