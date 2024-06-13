@@ -25,7 +25,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **hook** type **useContext** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Hook useContext does not use **consumer**. Instead it uses method **useContext**.
+The goal of this project is to present how to use **hook** type **useContext** in application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Hook useContext uses **consumer** in children component to get the data.
 
 ##### Terminology
 Terminology explanation:
