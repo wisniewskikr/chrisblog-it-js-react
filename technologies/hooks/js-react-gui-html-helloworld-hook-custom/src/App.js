@@ -1,17 +1,15 @@
-import { useState } from "react";
+import useCustomHook from "./useCustomHook";
 
-function App() {
+const App = () => {
 
-  const [count, setCount] = useState(0);  
-
-  setInterval(function(){
-    setCount(count + 1);
-  }, 1000);
+  const {count, increment, decrement} = useCustomHook(0);
 
   return (
-    <div>
-      Hello World number: {count}!
-    </div>
+    <>
+      <div>Hello World number: {count}!</div>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </>
   );
 
 }
