@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function App() {
 
+  const [ shouldRunEffect, setShouldRunEffect ] = useState(true);
   const [count, setCount] = useState(0);
 
   useEffect(() =>{
@@ -14,9 +15,11 @@ function App() {
 
     };
 
-    fetchData();
-
-  }, []);
+    if (shouldRunEffect) {
+      fetchData();
+    }
+    
+  }, [shouldRunEffect]);
 
   return (
     <div>
