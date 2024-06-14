@@ -5,24 +5,33 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: null
     };
+  }  
+
+  componentDidMount() {
+
+    const fetchData = async () => {
+      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      const result = await response.json();
+      return result.id;
+    };
+
+    fetchData().then((count) => {      
+      this.setState({
+        count: count
+      });
+    });
+
   }
 
-  render() {
+  render() {   
     return (
-      <>
-        <div>Hello World number: { this.state.count }!</div>
-        <button onClick={this.increment}>Increment</button>
-      </>
+      <div>
+        Hello World number: {this.state.count}!
+      </div>
     );
   }
-
-  increment = () => {
-    this.setState((prevState) => ({
-      count: prevState.count + 1
-    }));
-  };
   
 }
 
