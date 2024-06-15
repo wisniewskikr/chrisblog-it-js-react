@@ -25,12 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **componentDidMount()** in a **lifecycle** of **Class Component** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use **componentDidUpdate()** in a **lifecycle** of **Class Component** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **Class Component**: in React it's a component defined as a JS class. It's stateful.
-* **componentDidMount()**: componentDidMount() lifecycle method in React is the part of mounting phase and is called after a component has been rendered to the DOM.
+* **componentDidUpdate()**: componentDidUpdate() lifecycle method is the part of updating phase and is called after a component has been updated(property of state change).
 * **Lifecycle**: component lifecycle methods are special methods that get called at various stages of a component's life.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
