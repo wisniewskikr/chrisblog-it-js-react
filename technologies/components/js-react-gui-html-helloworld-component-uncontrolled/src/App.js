@@ -1,18 +1,20 @@
-import { useState } from "react";
+import { useRef } from "react";
 
 function App() {
   
-  const [inputValue, setInputValue] = useState("");
+  const inputRef = useRef(null);
+  const nameRef = useRef(null);
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
+  const handleInputChange = () => {
+    const value = inputRef.current.value;
+    nameRef.current.innerHTML = value;
   };
 
   return (
     <div>
-      <input type="text" value={inputValue}
+      <input type="text" ref={inputRef}
         onChange={handleInputChange} placeholder="Name..."/>
-      <p>Hello World: {inputValue}!</p>
+      <p>Hello World: <span ref={nameRef}/>!</p>
     </div>
   );
 
