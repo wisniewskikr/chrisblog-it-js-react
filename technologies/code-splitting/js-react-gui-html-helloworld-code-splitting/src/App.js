@@ -1,7 +1,13 @@
+import React, { lazy, Suspense } from "react";
+
+const HelloWorld = lazy(() => import("./HelloWorld"));
+
 function App() {
   return (
     <div>
-      Hello World!
+      <Suspense fallback={<div>Loading...</div>}>
+        <HelloWorld />
+      </Suspense>
     </div>
   );
 }
