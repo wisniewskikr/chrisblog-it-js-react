@@ -2,15 +2,27 @@ import { useState, useEffect } from "react";
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  const [country, setCountry] = useState(0);
 
   useEffect(() =>{
 
     const fetchData = async () => {
 
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      const response = await fetch("https://countries.trevorblades.com/", {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query: `
+            query {
+              countries {
+                name
+              } 
+            }
+          `
+        })
+      });
       const result = await response.json();
-      setCount(result.id);
+      setCountry(result.data.countries[0].name);
 
     };
 
@@ -20,7 +32,7 @@ function App() {
 
   return (
     <div>
-      Hello World number: {count}!
+      Hello World, {country}!
     </div>
   );
 
