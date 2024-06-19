@@ -1,8 +1,8 @@
-import FunctionalComponent from "./FunctionalComponent";
+import HelloWorld from "./HelloWorld";
 
 function App() {
   return (
-    <FunctionalComponent/>
+    <HelloWorld/>
   );
 }
 
