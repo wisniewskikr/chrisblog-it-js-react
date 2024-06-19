@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  const [message, setMessage] = useState(0);
 
   useEffect(() =>{
 
     const fetchData = async () => {
 
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      const response = await fetch("http://localhost:8080");
       const result = await response.json();
-      setCount(result.id);
+      setMessage(result.message);
 
     };
 
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      Hello World number: {count}!
+      {message}
     </div>
   );
 
