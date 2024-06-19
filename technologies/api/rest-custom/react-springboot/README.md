@@ -24,7 +24,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to connect **front-end** application - basing on **Typescript and Angular** framework - with **back-end** application - basing on **Java and Spring Boot** framework. Connection is done by using **API REST**. 
+The goal of this project is to present how to connect **front-end** application - basing on **React** framework - with **back-end** application - basing on **Java and Spring Boot** framework. Connection is done by using **API REST**. 
 
 ##### Terminology
 Terminology explanation:
@@ -33,8 +33,7 @@ Terminology explanation:
 * **Spring Boot**: framework for Java. It consists of: Spring + Container + Configuration
 * **Maven**: tool for build automation
 * **Git**: tool for distributed version control
-* **Typescript**: it's superset of Javascript. It means that it contains everything like Javascript plus it's strongly typed, it provides OOPS elements etc. 
-* **Angular**: it's component-based framework for building structured single page applications on client side. 
+* **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
 ##### Flow
 The following flow takes place in this project:
@@ -52,7 +51,6 @@ This project uses following technologies:
 * **Maven**: `https://docs.google.com/document/d/1cfIMcqkWlobUfVfTLQp7ixqEcOtoTR8X6OGo3cU4maw/edit?usp=sharing`
 * **Git**: `https://docs.google.com/document/d/1Iyxy5DYfsrEZK5fxZJnYy5a1saARxd5LyMEscJKSHn0/edit?usp=sharing`
 * **Spring Boot**: `https://docs.google.com/document/d/1mvrJT5clbkr9yTj-AQ7YOXcqr2eHSEw2J8n9BMZIZKY/edit?usp=sharing`
-* **Typescript**: `https://docs.google.com/document/d/1uSQvYyzzBnsWEbkcsSoJlK-LfTwHAvh1r2rPP0p2P78/edit?usp=sharing`
 
 
 PRECONDITIONS
@@ -64,8 +62,6 @@ PRECONDITIONS
 * Installed **Maven** (tested on version 3.8.5)
 * Installed **Git** (tested on version 2.33.0.windows.2)
 * Installed **NPM** (tested on version 10.2.4)
-* Installed **Angular CLI** (tested on version 17.1.1)
-
 
 ##### Preconditions - Actions
 * Download **Source Code** (using Git or in any other way) 
