@@ -10,7 +10,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World number 1!** message
+   * Expected **Hello World, Andorra!** message
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -25,12 +25,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **API** type **REST** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use **API** type **GraphQL** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **API**: An API, or Application Programming Interface, is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information.
-* **REST**: A REST API (Representational State Transfer API) is a type of web API that adheres to the principles of REST, an architectural style designed for networked applications. REST APIs are widely used due to their simplicity and scalability.
+* **GraphQL**: GraphQL is an open-source data query and manipulation language for APIs, and a runtime for executing those queries by using a type system you define for your data.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
