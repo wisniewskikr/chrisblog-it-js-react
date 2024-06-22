@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import HelloWorldNotSecured from './components/hello-world-not-secured/HelloWorldNotSecured';
-import HelloWorldSecured from './components/hello-world-secured/HelloWorldSecured';
+import HelloWorldSecuredUser from './components/hello-world-secured-user/HelloWorldSecuredUser';
+import HelloWorldSecuredAdmin from './components/hello-world-secured-admin/HelloWorldSecuredAdmin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +12,8 @@ root.render(
     <Routes>
       <Route path="/" element={ <Home/>} />
       <Route path="/not-secured" element={ <HelloWorldNotSecured/> } />
-      <Route path="/secured" element={ <HelloWorldSecured/> } />
+      <Route path="/secured-user" element={ <HelloWorldSecuredUser/> } />
+      <Route path="/secured-admin" element={ <HelloWorldSecuredAdmin/> } />
     </Routes>
   </BrowserRouter>
 );

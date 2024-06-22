@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const HelloWorldSecured = () => {
+const HelloWorldSecuredUser = () => {
 
   const [message, setMessage] = useState(0);
 
@@ -28,4 +28,4 @@ const HelloWorldSecured = () => {
 
 }
 
-export default HelloWorldSecured;
+export default HelloWorldSecuredUser;
