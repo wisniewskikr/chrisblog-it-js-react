@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HelloWorldNotSecured = () => {
 
@@ -19,9 +20,10 @@ const HelloWorldNotSecured = () => {
   }, []);
 
   return (
-    <div>
-      {message}
-    </div>
+    <>
+      <div>{message}</div>
+      <div><Link to="/">Back</Link></div>
+    </>
   );
 
 }
