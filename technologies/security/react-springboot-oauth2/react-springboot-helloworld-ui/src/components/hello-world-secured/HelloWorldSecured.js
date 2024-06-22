@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function App() {
+const HelloWorldSecured = () => {
 
   const [message, setMessage] = useState(0);
 
@@ -26,4 +26,4 @@ function App() {
 
 }
 
-export default App;
+export default HelloWorldSecured;
