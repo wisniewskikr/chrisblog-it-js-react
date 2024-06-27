@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HelloWorldSecuredAdmin = () => {
 
   const [message, setMessage] = useState(0);
+  let navigate = useNavigate();
 
   useEffect(() =>{
 
@@ -12,23 +13,23 @@ const HelloWorldSecuredAdmin = () => {
       try {
 
         let response = await fetch(url);
+        let data = await response.json();
 
         if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            throw new Error(`Status: ${response.status}! Message: ${data.message}!`);
         }
-
-        let data = await response.json();
+        
         setMessage(data.message);
 
       } catch (error) {
-          console.error('Error fetching data:', error);
+          navigate('/error?message=' + error.message);
       }
 
     };
 
     fetchData("http://localhost:8080/admin");
 
-  }, []);
+  }, [navigate]);
 
   return (
     <>
