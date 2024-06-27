@@ -21,12 +21,14 @@ public class CustomExceptionHandler {
             errorDetail = ProblemDetail
                     .forStatusAndDetail(HttpStatusCode.valueOf(401), ex.getMessage());
             errorDetail.setProperty("access_denied_reason", "Authentication Failure!");
+            errorDetail.setProperty("message", ex.getMessage());
         }
 
         if (ex instanceof AccessDeniedException) {
             errorDetail = ProblemDetail
                     .forStatusAndDetail(HttpStatusCode.valueOf(403), ex.getMessage());
             errorDetail.setProperty("access_denied_reason", "Authorization Failure!");
+            errorDetail.setProperty("message", ex.getMessage());
 
         }
 
@@ -34,11 +36,14 @@ public class CustomExceptionHandler {
             errorDetail = ProblemDetail
                     .forStatusAndDetail(HttpStatusCode.valueOf(403), ex.getMessage());
             errorDetail.setProperty("access_denied_reason", "JWT Signature not valid");
+            errorDetail.setProperty("message", ex.getMessage());
         }
+
         if (ex instanceof ExpiredJwtException) {
             errorDetail = ProblemDetail
                     .forStatusAndDetail(HttpStatusCode.valueOf(403), ex.getMessage());
             errorDetail.setProperty("access_denied_reason", "JWT Token already expired !");
+            errorDetail.setProperty("message", ex.getMessage());
         }
 
         return errorDetail;
