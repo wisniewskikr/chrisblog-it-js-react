@@ -7,15 +7,26 @@ const HelloWorldSecuredAdmin = () => {
 
   useEffect(() =>{
 
-    const fetchData = async () => {
+    const fetchData = async (url) => {
 
-      const response = await fetch("http://localhost:8080/admin");
-      const result = await response.json();
-      setMessage(result.message);
+      try {
+
+        let response = await fetch(url);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        let data = await response.json();
+        setMessage(data.message);
+
+      } catch (error) {
+          console.error('Error fetching data:', error);
+      }
 
     };
 
-    fetchData();
+    fetchData("http://localhost:8080/admin");
 
   }, []);
 
