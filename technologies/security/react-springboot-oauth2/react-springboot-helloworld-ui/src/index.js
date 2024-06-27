@@ -8,6 +8,7 @@ import HelloWorldSecuredAdmin from './components/hello-world-secured-admin/Hello
 import ErrorMessage from './components/error/ErrorMessage';
 import AuthProvider from 'react-auth-kit/AuthProvider';
 import createStore from 'react-auth-kit/createStore';
+import Login from './components/login/Login';
 
 const store = createStore({
   authName:'_auth',
@@ -26,6 +27,7 @@ root.render(
         <Route path="/secured-user" element={ <HelloWorldSecuredUser/> } />
         <Route path="/secured-admin" element={ <HelloWorldSecuredAdmin/> } />
         <Route path="/error" element={ <ErrorMessage/>} />
+        <Route path="/login" element={ <Login/>} />
       </Routes>
     </BrowserRouter>
   </AuthProvider>
