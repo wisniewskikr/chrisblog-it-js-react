@@ -1,6 +1,10 @@
 package com.example.controllers;
 
+import java.util.Collections;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -28,7 +32,7 @@ public class AuthController {
     }
 
     @PostMapping("/authenticate")
-    public String authenticateAndGetToken(@RequestBody(required = false) AuthDto authRequest) {
+    public ResponseEntity<Map<String, String>> authenticateAndGetToken(@RequestBody(required = false) AuthDto authRequest) {
 
         if (authRequest == null) {
             throw new BadCredentialsException("Missing JSON with credentials !");
@@ -38,7 +42,11 @@ public class AuthController {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUserName(), authRequest.getPassword()));
 
         if (authentication.isAuthenticated()) {
-            return jwtService.generateToken(authRequest.getUserName());
+            
+            String token = jwtService.generateToken(authRequest.getUserName());
+            Map<String, String> response = Collections.singletonMap("token", token);		
+		    return ResponseEntity.ok(response);
+            
         } else {
             throw new UsernameNotFoundException("Invalid user request !");
         }
