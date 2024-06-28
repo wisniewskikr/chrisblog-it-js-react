@@ -12,7 +12,7 @@ const Home = () => {
       <AuthInfo/>
       <nav>
         <ul>
-            <li> <Link to="/not-secured">Hello World Not Secured</Link> </li>
+            <li> <Link to="/public">Public</Link> </li>
             <li> <Link to="/secured-user">Hello World Secured for User</Link> </li>
             <li> <Link to="/secured-admin">Hello World Secured for Admin</Link> </li>
         </ul>

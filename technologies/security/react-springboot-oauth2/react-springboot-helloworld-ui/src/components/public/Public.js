@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthInfo from "../auth-info/AuthInfo";
 
-const HelloWorldNotSecured = () => {
+const Public = () => {
 
   const [message, setMessage] = useState(0);
   let navigate = useNavigate();
@@ -42,4 +42,4 @@ const HelloWorldNotSecured = () => {
 
 }
 
-export default HelloWorldNotSecured;
+export default Public;
