@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import useAuthHeader from "react-auth-kit/hooks/useAuthHeader";
-import useSignOut from "react-auth-kit/hooks/useSignOut";
 import { Link, useNavigate } from "react-router-dom";
+import AuthInfo from "../auth-info/AuthInfo";
 
 const HelloWorldSecuredAdmin = () => {
 
   const [message, setMessage] = useState(0);
   const authHeader = useAuthHeader();
-  const signOut = useSignOut();
   let navigate = useNavigate();
 
   useEffect(() =>{
@@ -44,7 +43,7 @@ const HelloWorldSecuredAdmin = () => {
 
   return (
     <>
-      <div><Link to="/logout" onClick={signOut}>Logout</Link></div>
+      <AuthInfo/>
       <div>{message}</div>
       <div><Link to="/">Back</Link></div>
     </>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import AuthInfo from "../auth-info/AuthInfo";
 
 const HelloWorldNotSecured = () => {
 
@@ -33,6 +34,7 @@ const HelloWorldNotSecured = () => {
 
   return (
     <>
+      <AuthInfo/>
       <div>{message}</div>
       <div><Link to="/">Back</Link></div>
     </>
