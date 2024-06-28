@@ -48,7 +48,9 @@ const Login = () => {
           token: data.token,
           type: 'Bearer'
         }
-      });     
+      });   
+      
+      navigate('/');
 
     } catch (error) {
         navigate('/error?message=' + error.message);
