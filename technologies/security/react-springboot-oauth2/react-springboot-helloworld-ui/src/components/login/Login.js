@@ -47,6 +47,8 @@ const Login = () => {
         auth: {
           token: data.token,
           type: 'Bearer'
+        }, userState: {
+          user: formData.userName,
         }
       });   
       
