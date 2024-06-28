@@ -1,9 +1,11 @@
 import { useState } from "react";
+import useSignIn from "react-auth-kit/hooks/useSignIn";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
 
   let navigate = useNavigate();
+  const signIn = useSignIn();
   const [formData, setFormData] = useState({
     userName: '',
     password: '',
@@ -40,8 +42,13 @@ const Login = () => {
       if (!response.ok) {
           throw new Error(`Status: ${response.status}! Message: ${data.message}!`);
       }
-      
-      console.log("***** Token: " + data.token);
+
+      signIn({
+        auth: {
+          token: data.token,
+          type: 'Bearer'
+        }
+      });     
 
     } catch (error) {
         navigate('/error?message=' + error.message);
