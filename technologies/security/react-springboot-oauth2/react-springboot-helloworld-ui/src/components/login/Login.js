@@ -1,41 +1,80 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
 
-  const [message, setMessage] = useState(0);
   let navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    userName: '',
+    password: '',
+  });
 
-  useEffect(() =>{
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-    const fetchData = async (url) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetchData("http://localhost:8080/authenticate");
+  };
 
-      try {
+  const fetchData = async (url) => {
 
-        let response = await fetch(url);
-        let data = await response.json();
+    try {
 
-        if (!response.ok) {
-            throw new Error(`Status: ${response.status}! Message: ${data.message}!`);
-        }
+      let response = await fetch(url,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
         
-        setMessage(data.message);
+      let data = await response.json();
 
-      } catch (error) {
-          navigate('/error?message=' + error.message);
+      if (!response.ok) {
+          throw new Error(`Status: ${response.status}! Message: ${data.message}!`);
       }
+      
+      console.log("***** Token: " + data.token);
 
-    };
+    } catch (error) {
+        navigate('/error?message=' + error.message);
+    }
 
-    fetchData("http://localhost:8080");
-
-  }, [navigate]);
+  };   
 
   return (
     <>
-      <div>{message}</div>
+      <form onSubmit={handleSubmit}>        
+        <div>
+          <input
+            type="text"
+            name="userName"            
+            placeholder="Username..."
+            value={formData.userName} 
+            onChange={handleChange} 
+          />
+        </div>
+        <div>
+          <input
+            type="password" 
+            name="password"           
+            placeholder="Password..."
+            value={formData.password} 
+            onChange={handleChange}
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
       <div><Link to="/">Back</Link></div>
     </>
+   
   );
 
 }
