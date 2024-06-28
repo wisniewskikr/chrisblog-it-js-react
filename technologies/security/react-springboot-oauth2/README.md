@@ -13,7 +13,8 @@ Usage steps:
    * Credentials for USER role (access for User resources): **user / user123**
    * Credentials for ADMIN role (access for User and Admin resources): **admin / admin123**
 1. Clean up environment 
-     * In a command line tool stop application with `ctrl + C`
+     * In a first command line tool stop application with `ctrl + C`
+     * In a second command line tool stop application with `ctrl + C`
 
 
 USAGE PICTURES
