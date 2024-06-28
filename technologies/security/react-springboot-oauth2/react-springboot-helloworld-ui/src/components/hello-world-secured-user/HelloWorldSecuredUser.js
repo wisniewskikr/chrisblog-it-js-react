@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import useAuthHeader from "react-auth-kit/hooks/useAuthHeader";
+import useSignOut from "react-auth-kit/hooks/useSignOut";
 import { Link, useNavigate } from "react-router-dom";
 
 const HelloWorldSecuredUser = () => {
 
   const [message, setMessage] = useState(0);
   const authHeader = useAuthHeader();
+  const signOut = useSignOut();
   let navigate = useNavigate();
 
   useEffect(() =>{
@@ -38,10 +40,16 @@ const HelloWorldSecuredUser = () => {
 
     fetchData("http://localhost:8080/user");
 
-  }, [navigate]);
+  }, [navigate, authHeader]);
+
+  const logout = () => {
+    signOut();
+    navigate('/');
+  };
 
   return (
     <>
+      <div><Link onClick={logout}>Logout</Link></div>
       <div>{message}</div>
       <div><Link to="/">Back</Link></div>
     </>

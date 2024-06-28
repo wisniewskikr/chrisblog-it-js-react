@@ -21,7 +21,7 @@ const HelloWorldSecuredAdmin = () => {
             'Authorization': authHeader,
           },
         });
-        
+
         let data = await response.json();
 
         if (!response.ok) {
@@ -38,7 +38,7 @@ const HelloWorldSecuredAdmin = () => {
 
     fetchData("http://localhost:8080/admin");
 
-  }, [navigate]);
+  }, [navigate, authHeader]);
 
   return (
     <>
