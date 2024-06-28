@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import User from './components/user/User';
-import HelloWorldSecuredAdmin from './components/hello-world-secured-admin/HelloWorldSecuredAdmin';
+import Admin from './components/admin/Admin';
 import ErrorMessage from './components/error/ErrorMessage';
 import AuthProvider from 'react-auth-kit/AuthProvider';
 import createStore from 'react-auth-kit/createStore';
 import Login from './components/login/Login';
 import AuthOutlet from '@auth-kit/react-router/AuthOutlet';
 import Logout from './components/logout/Logout';
+import Public from './components/public/Public';
 
 const store = createStore({
   authName:'_auth',
@@ -30,7 +31,7 @@ root.render(
         <Route path="/logout" element={ <Logout/>} />
         <Route element={<AuthOutlet fallbackPath='/login' />}>
           <Route path="/user" element={ <User/> } />
-          <Route path="/secured-admin" element={ <HelloWorldSecuredAdmin/> } />
+          <Route path="/admin" element={ <Admin/> } />
         </Route>
       </Routes>
     </BrowserRouter>
