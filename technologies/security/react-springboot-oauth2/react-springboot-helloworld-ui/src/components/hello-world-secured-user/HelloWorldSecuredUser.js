@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import useAuthHeader from "react-auth-kit/hooks/useAuthHeader";
 import { Link, useNavigate } from "react-router-dom";
 
 const HelloWorldSecuredUser = () => {
 
   const [message, setMessage] = useState(0);
+  const authHeader = useAuthHeader();
   let navigate = useNavigate();
 
   useEffect(() =>{
@@ -12,7 +14,14 @@ const HelloWorldSecuredUser = () => {
 
       try {
 
-        let response = await fetch(url);
+        let response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': authHeader,
+          },
+        });
+        
         let data = await response.json();
 
         if (!response.ok) {
