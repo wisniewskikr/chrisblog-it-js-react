@@ -42,14 +42,9 @@ const HelloWorldSecuredUser = () => {
 
   }, [navigate, authHeader]);
 
-  const logout = () => {
-    signOut();
-    navigate('/');
-  };
-
   return (
     <>
-      <div><Link onClick={logout}>Logout</Link></div>
+      <div><Link to="/" onClick={signOut}>Logout</Link></div>
       <div>{message}</div>
       <div><Link to="/">Back</Link></div>
     </>
