@@ -11,7 +11,7 @@ const Home = () => {
 
     <>
       
-    { isAuthenticated ? <div><Link to="/" onClick={signOut}>Logout</Link></div> : <div><Link to="/login">Login</Link></div> }
+    { isAuthenticated ? <div><Link to="/logout" onClick={signOut}>Logout</Link></div> : <div><Link to="/login">Login</Link></div> }
       <nav>
         <ul>
             <li> <Link to="/not-secured">Hello World Not Secured</Link> </li>

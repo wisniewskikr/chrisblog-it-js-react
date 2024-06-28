@@ -10,6 +10,7 @@ import AuthProvider from 'react-auth-kit/AuthProvider';
 import createStore from 'react-auth-kit/createStore';
 import Login from './components/login/Login';
 import AuthOutlet from '@auth-kit/react-router/AuthOutlet';
+import Logout from './components/logout/Logout';
 
 const store = createStore({
   authName:'_auth',
@@ -27,6 +28,7 @@ root.render(
         <Route path="/not-secured" element={ <HelloWorldNotSecured/> } />        
         <Route path="/error" element={ <ErrorMessage/>} />
         <Route path="/login" element={ <Login/>} />
+        <Route path="/logout" element={ <Logout/>} />
         <Route element={<AuthOutlet fallbackPath='/login' />}>
           <Route path="/secured-user" element={ <HelloWorldSecuredUser/> } />
           <Route path="/secured-admin" element={ <HelloWorldSecuredAdmin/> } />

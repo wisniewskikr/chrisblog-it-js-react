@@ -44,7 +44,7 @@ const HelloWorldSecuredAdmin = () => {
 
   return (
     <>
-      <div><Link to="/" onClick={signOut}>Logout</Link></div>
+      <div><Link to="/logout" onClick={signOut}>Logout</Link></div>
       <div>{message}</div>
       <div><Link to="/">Back</Link></div>
     </>
