@@ -3,7 +3,7 @@ import useAuthHeader from "react-auth-kit/hooks/useAuthHeader";
 import { Link, useNavigate } from "react-router-dom";
 import AuthInfo from "../auth-info/AuthInfo";
 
-const HelloWorldSecuredUser = () => {
+const User = () => {
 
   const [message, setMessage] = useState(0);
   const authHeader = useAuthHeader();
@@ -51,4 +51,4 @@ const HelloWorldSecuredUser = () => {
 
 }
 
-export default HelloWorldSecuredUser;
+export default User;

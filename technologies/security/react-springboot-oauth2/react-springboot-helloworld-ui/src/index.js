@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
-import HelloWorldSecuredUser from './components/hello-world-secured-user/HelloWorldSecuredUser';
+import User from './components/user/User';
 import HelloWorldSecuredAdmin from './components/hello-world-secured-admin/HelloWorldSecuredAdmin';
 import ErrorMessage from './components/error/ErrorMessage';
 import AuthProvider from 'react-auth-kit/AuthProvider';
@@ -29,7 +29,7 @@ root.render(
         <Route path="/login" element={ <Login/>} />
         <Route path="/logout" element={ <Logout/>} />
         <Route element={<AuthOutlet fallbackPath='/login' />}>
-          <Route path="/secured-user" element={ <HelloWorldSecuredUser/> } />
+          <Route path="/user" element={ <User/> } />
           <Route path="/secured-admin" element={ <HelloWorldSecuredAdmin/> } />
         </Route>
       </Routes>
