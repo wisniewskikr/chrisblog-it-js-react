@@ -1,17 +1,15 @@
-import useIsAuthenticated from "react-auth-kit/hooks/useIsAuthenticated";
-import useSignOut from "react-auth-kit/hooks/useSignOut";
 import { Link } from "react-router-dom";
+import AuthInfo from "../auth-info/AuthInfo";
 
 const Home = () => {
   
-  const isAuthenticated = useIsAuthenticated();
-  const signOut = useSignOut();
+  
 
   return (
 
-    <>
+    <>      
       
-    { isAuthenticated ? <div><Link to="/logout" onClick={signOut}>Logout</Link></div> : <div><Link to="/login">Login</Link></div> }
+      <AuthInfo/>
       <nav>
         <ul>
             <li> <Link to="/not-secured">Hello World Not Secured</Link> </li>
@@ -19,6 +17,7 @@ const Home = () => {
             <li> <Link to="/secured-admin">Hello World Secured for Admin</Link> </li>
         </ul>
       </nav>
+      
     </>
 
 
