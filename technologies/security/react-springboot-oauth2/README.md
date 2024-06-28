@@ -10,6 +10,8 @@ Usage steps:
 1. In a second command line tool install ui application with `cd .\react-springboot-helloworld-ui\ | npm install`
 1. In a second command line tool start ui application with `cd .\react-springboot-helloworld-ui\ | npm start`
 1. In a browser visit `http://localhost:3000`
+   * Credentials for USER role (access for User resources): **user / user123**
+   * Credentials for ADMIN role (access for User and Admin resources): **admin / admin123**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -50,7 +52,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to connect **front-end** application - basing on **React** framework - with **back-end** application - basing on **Java and Spring Boot** framework. Connection is done by using **API REST**. 
+The goal of this project is to present how to secure connection by **OAuth2** and **JWT Token** between **front-end** application - basing on **React** framework - with **back-end** application - basing on **Java and Spring Boot** framework. Connection is done by using **API REST**. 
 
 ##### Terminology
 Terminology explanation:
@@ -60,23 +62,15 @@ Terminology explanation:
 * **Maven**: tool for build automation
 * **Git**: tool for distributed version control
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
-
-##### Flow
-The following flow takes place in this project:
-1. User via any browser sends request to front-end application for the content.
-1. Front-end application sends request to back-end application for content.
-1. Back-end application sends back response with content to front-end application.
-1. Front-end application sends back response with content to User via browser.
+* **Security**: in IT it means authentication + authorization. Authentication - application confirms that you are you and checks your role. Authorization - application confirms that you have access to requested resources.
+* **OAuth2**: OAuth2 (Open Authorization 2.0) is an authorization framework that enables applications to obtain limited access to user accounts on an HTTP service.
+* **JWT**: JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.
+* **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
+* **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
+* **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
-
-##### Technologies
-This project uses following technologies:
-* **Java**: `https://docs.google.com/document/d/119VYxF8JIZIUSk7JjwEPNX1RVjHBGbXHBKuK_1ytJg4/edit?usp=sharing`
-* **Maven**: `https://docs.google.com/document/d/1cfIMcqkWlobUfVfTLQp7ixqEcOtoTR8X6OGo3cU4maw/edit?usp=sharing`
-* **Git**: `https://docs.google.com/document/d/1Iyxy5DYfsrEZK5fxZJnYy5a1saARxd5LyMEscJKSHn0/edit?usp=sharing`
-* **Spring Boot**: `https://docs.google.com/document/d/1mvrJT5clbkr9yTj-AQ7YOXcqr2eHSEw2J8n9BMZIZKY/edit?usp=sharing`
 
 
 PRECONDITIONS
