@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
 
     const fetchData = async () => {
 
-      const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-      const result = await response.json();
+      const response = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+      const result = await response.data;
       setCount(result.id);
 
     };
