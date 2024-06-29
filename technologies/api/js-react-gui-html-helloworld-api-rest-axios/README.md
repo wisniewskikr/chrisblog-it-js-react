@@ -26,10 +26,11 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **API** type **REST** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use library **axios** in **API** type **REST** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
+* **Axios**: Axios is a third-party library, that simplifies the process of making HTTP requests.
 * **API**: An API, or Application Programming Interface, is a set of rules and protocols that allows different software applications to communicate with each other. It defines the methods and data formats that applications can use to request and exchange information.
 * **REST**: A REST API (Representational State Transfer API) is a type of web API that adheres to the principles of REST, an architectural style designed for networked applications. REST APIs are widely used due to their simplicity and scalability.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
