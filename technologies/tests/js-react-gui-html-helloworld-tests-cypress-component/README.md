@@ -8,9 +8,10 @@ USAGE COMMANDS
 Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-cypress-component`
 1. In a command line tool install nmp packages with `npm install`
-1. (Opional) In a command line tool install cyprss with `npm install cypress --save-dev`
+1. (Optional) In a command line tool install cyprss with `npm install cypress --save-dev`
+1. (Optional) Configure tests of component by following steps from section "Configure Cypress"
 1. In a command line tool open cypress with `npx cypress open`
-1. Test component by following steps from section "Usage Items"
+1. Run tests of components by following steps from section "Usage Items"
 1. Clean up environment 
      * Closs cypress window
 
@@ -31,10 +32,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to **test** using **Cypress** tool an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
+* **Testing**: comparing expectations with real results;
+* **Cypress**: Cypress is a modern end-to-end testing framework designed for web applications. It is built to address the key pain points developers and QA engineers face when testing modern web applications.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
