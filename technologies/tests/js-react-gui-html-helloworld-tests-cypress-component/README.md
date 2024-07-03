@@ -32,11 +32,11 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to **test** using **Cypress** tool an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to create and run **tests** type **components** using **Cypress** tool an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
-* **Testing**: comparing expectations with real results;
+* **Testing components**: comparing component's expectations with real results;
 * **Cypress**: Cypress is a modern end-to-end testing framework designed for web applications. It is built to address the key pain points developers and QA engineers face when testing modern web applications.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
