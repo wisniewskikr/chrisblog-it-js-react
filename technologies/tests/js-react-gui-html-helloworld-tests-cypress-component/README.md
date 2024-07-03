@@ -8,17 +8,21 @@ USAGE COMMANDS
 Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-cypress-component`
 1. In a command line tool install nmp packages with `npm install`
-1. `npm install cypress --save-dev`
+1. (Opional) In a command line tool install cyprss with `npm install cypress --save-dev`
 1. In a command line tool open cypress with `npx cypress open`
-1. In a command line tool start application with `npm start`
-1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World** page
+1. Test component by following steps from section "Usage Items"
 1. Clean up environment 
-     * In a command line tool stop application with `ctrl + C`
+     * Closs cypress window
 
 
 USAGE IMAGES
 ------------
+
+![My Image](readme-images/image-01.png)
+
+![My Image](readme-images/image-01.png)
+
+![My Image](readme-images/image-01.png)
 
 ![My Image](readme-images/image-01.png)
 
