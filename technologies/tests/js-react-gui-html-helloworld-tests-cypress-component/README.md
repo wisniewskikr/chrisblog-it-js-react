@@ -9,7 +9,7 @@ Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-cypress-component`
 1. In a command line tool install nmp packages with `npm install`
 1. `npm install cypress --save-dev`
-1. `npx cypress open`
+1. In a command line tool open cypress with `npx cypress open`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
    * Expected **Hello World** page
@@ -60,3 +60,25 @@ PRECONDITIONS
 ##### Preconditions - Actions
 * Download **Source Code** (using Git or in any other way) 
 * Open any **Command Line** tool (for instance "Windonw PowerShell" on Windows OS) on downloaded **project's main folder**
+
+
+CONFIGURE CYPRESS
+-----------------
+
+In a command line tool open cypress with `npx cypress open`
+
+![My Image](readme-images/cypress-01.png)
+
+![My Image](readme-images/cypress-02.png)
+
+![My Image](readme-images/cypress-03.png)
+
+![My Image](readme-images/cypress-04.png)
+
+![My Image](readme-images/cypress-05.png)
+
+![My Image](readme-images/cypress-06.png)
+
+![My Image](readme-images/cypress-07.png)
+
+![My Image](readme-images/cypress-08.png)
