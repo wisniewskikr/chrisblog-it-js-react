@@ -85,7 +85,3 @@ In a command line tool open cypress with `npx cypress open`
 ![My Image](readme-images/cypress-05.png)
 
 ![My Image](readme-images/cypress-06.png)
-
-![My Image](readme-images/cypress-07.png)
-
-![My Image](readme-images/cypress-08.png)
