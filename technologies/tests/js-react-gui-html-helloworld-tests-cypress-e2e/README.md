@@ -10,10 +10,12 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. (Optional) In a command line tool install cyprss with `npm install cypress --save-dev`
 1. (Optional) Configure tests of component by following steps from section **Configure Cypress**
-1. In a command line tool open cypress with `npx cypress open`
+1. In a first command line tool start application with `npm start`
+1. In a second command line tool open cypress with `npx cypress open`
 1. Run tests of components by following steps from section **Usage Items**
 1. Clean up environment 
-     * Closs cypress window
+     * Close cypress window
+     * In a first command line tool stop application with `ctrl + C`
 
 
 USAGE IMAGES
