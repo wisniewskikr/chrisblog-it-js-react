@@ -1,16 +1,21 @@
+import { useState } from "react";
 import ChildComponent from "./ChildComponent";
 
 const ParentComponent = () => {
-  // Callback to receive data from the child
+  
+  const [name, setName] = useState('Stranger'); 
+  
   const callback = (data) => {
-    console.log("Data from Child:", data);
+    setName(data);
   };
 
   return (
-    <div>
-      {/* Pass the callback to the child */}
-      <ChildComponent fromChild={callback} />
-    </div>
+    <>
+        <div>Hello World, {name}!</div>
+        <div>
+            <ChildComponent fromChild={callback} />
+        </div>
+    </>
   );
 };
 export default ParentComponent;
