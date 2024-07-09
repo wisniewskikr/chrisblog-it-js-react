@@ -10,7 +10,9 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World** page
+   * Expected **Hello World** page. 
+   * Fill the field **name** and click **Send** button. 
+   * Expected message **Hello World, {name}!**.
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -27,7 +29,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to send data **from Child component to Parent component** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
