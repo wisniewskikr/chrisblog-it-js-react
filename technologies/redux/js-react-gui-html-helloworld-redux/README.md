@@ -11,7 +11,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected message **Hello World number {number}** and buttons **Increase** and **Decrease**
+   * Expected message **Hello World number {number}** and buttons **Increment** and **Decrement**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
