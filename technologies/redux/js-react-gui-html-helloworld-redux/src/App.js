@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { increment, decrement } from "./1-actions";
+import { increment, decrement } from "./actions";
 
 const App = ({ count, increment, decrement }) => {
   return (
