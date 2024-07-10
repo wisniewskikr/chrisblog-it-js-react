@@ -7,7 +7,7 @@ USAGE COMMANDS
 
 Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-redux`
-1. (Optional) In a command line tool install redux with `npm install redux react-redux`
+1. (Optional) In a command line tool install redux with `npm install redux react-redux @reduxjs/toolkit`
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
