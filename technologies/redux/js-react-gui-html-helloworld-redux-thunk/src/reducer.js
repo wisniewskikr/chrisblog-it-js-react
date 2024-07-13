@@ -1,12 +1,29 @@
 
-const counterReducer = (state = { count: 0 }, action) => {
+import { combineReducers } from 'redux';
+
+// Example reducers
+const initialState = {
+  data: [],
+  loading: false,
+  error: null,
+};
+
+const dataReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "INCREMENT":
-      return { count: state.count + 1 };
-    case "DECREMENT":
-      return { count: state.count - 1 };
+    case 'FETCH_DATA_REQUEST':
+      return { ...state, loading: true };
+    case 'FETCH_DATA_SUCCESS':
+      return { ...state, loading: false, data: action.payload };
+    case 'FETCH_DATA_FAILURE':
+      return { ...state, loading: false, error: action.payload };
     default:
       return state;
   }
 };
-export default counterReducer;
+
+const rootReducer = combineReducers({
+  data: dataReducer,
+  // Add other reducers here
+});
+
+export default rootReducer;

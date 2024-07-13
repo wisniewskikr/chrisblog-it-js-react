@@ -1,11 +1,10 @@
-
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './reducer';
+import rootReducer from './reducer';
+import { thunk } from 'redux-thunk';
 
 const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
 });
 
 export default store;
