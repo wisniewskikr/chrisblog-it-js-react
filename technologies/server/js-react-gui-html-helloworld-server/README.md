@@ -26,11 +26,11 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to work with dev and prod **environments** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to deploy on **server (express)** an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
-* **Environments**: usually application is deployed on at least two environments: dev and prod. Dev (Development) environment is used for development process. Prod (Production) environment is used to provide final product to the users. 
+* **Server**: the tool where application can be deployed.  
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
