@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+USAGE COMMANDS
+--------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Please be aware that following tools should be installed in advance on your computer: **node.js**. 
 
-## Available Scripts
+> Please **clone/download** project, open **project's main folder** in your favorite **command line tool** and then **proceed with steps below**. 
 
-In the project directory, you can run:
+Usage steps:
+1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-actions-onclick-button`
+1. In a command line tool install nmp packages with `npm install`
+1. In a command line tool start application with `npm start`
+1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
+   * Expected **Hello World number: {number}** message (after pressing button **Click** number should increase)
+1. Clean up environment 
+     * In a command line tool stop application with `ctrl + C`
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+USAGE IMAGES
+------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![My Image](readme-images/image-01.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+DESCRIPTION
+-----------
 
-### `npm run build`
+##### Goal
+The goal of this project is to present how to use an **action** type **onClick** by a **button** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Terminology
+Terminology explanation:
+* **onClick**: it's an action performed on some HTML element. In this case the action is performed on a button.
+* **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
+* **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
+* **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### Flow
+The following flow takes place in this project:
+1. User via any html browser sends request to application for the content.
+1. Application sends back response to user via html browser with message
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Launch
+To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
 
-### `npm run eject`
+##### Technologies
+This project uses following technologies:
+* **JavaScript**: `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
+* **Node** (section 'Node'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
+* **React framework** (section 'React Framework'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+PRECONDITIONS
+-------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##### Preconditions - Tools
+* Installed **Operating System** (tested on Windows 11)
+* Installed **Node** (tested on version 18.18.1)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### Preconditions - Actions
+* Download **Source Code** (using Git or in any other way) 
+* Open any **Command Line** tool (for instance "Windonw PowerShell" on Windows OS) on downloaded **project's main folder**
