@@ -8,16 +8,11 @@ USAGE COMMANDS
 Usage steps:
 1. (Optional) In a command line create react application with `npx create-react-app js-react-gui-html-helloworld-server`
 1. In a command line tool install nmp packages with `npm install`
-1. In a command line tool start application in development mode with `npm start`
+1. (Optional) In a command line tool install nmp packages with `npm install express`
+1. In a command line tool build application with `npm run build`
+1. In a command line tool start application with `node server.js`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected message **Hello World from Development!**
-   * Expected console log **You are running in development mode.**
-1. In a command line tool stop application with `ctrl + C`
-1. In a command line tool build production application with `npm run build`
-1. In a command line tool start application in production mode with `node server.js`
-1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected message **Hello World from Production!**
-   * Expected console log **You are running in production mode.**
+   * Expected message **Hello World!**
 1. In a command line tool stop application with `ctrl + C`
 
 
