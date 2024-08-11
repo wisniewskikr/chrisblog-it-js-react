@@ -7,8 +7,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Navigate to="/helloworld" replace />} />
-      <Route path="/helloworld" element={<HelloWorld/>} />
+      <Route path="/" element={<Navigate to="/helloworld/Hello_World" replace />} />
+      <Route path="/helloworld/:message" element={<HelloWorld/>} />
     </Routes>
   </BrowserRouter>
 );
