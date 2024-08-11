@@ -32,7 +32,6 @@ The goal of this project is to present how to use **routing default redirect** i
 Terminology explanation:
 * **Routing**: in React it's responsible for navigation between different pages. Because React uses Single Page Application so routing reloads only flexible content on this once loaded page.
 * **Default redirect**: it's redirect for first default URL "/".
-* **Index file**: it's first file run by React framework. In this example all routing is defined here and used in components.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
