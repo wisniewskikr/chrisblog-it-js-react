@@ -11,8 +11,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Home** page. Click the link **Hello World**
-   * Expected **Hello World** page. Click the link **Back**
+   * Expected message **Hello World!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -22,18 +21,17 @@ USAGE IMAGES
 
 ![My Image](readme-images/image-01.png)
 
-![My Image](readme-images/image-02.png)
-
 
 DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **routing** defined in the **index** file in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use **routing default redirect** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **Routing**: in React it's responsible for navigation between different pages. Because React uses Single Page Application so routing reloads only flexible content on this once loaded page.
+* **Default redirect**: it's redirect for first default URL "/".
 * **Index file**: it's first file run by React framework. In this example all routing is defined here and used in components.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
