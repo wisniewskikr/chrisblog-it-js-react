@@ -26,12 +26,12 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **routing** with the hook **useParams** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to use **routing** with the hook **useSearchParams** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **Routing**: in React it's responsible for navigation between different pages. Because React uses Single Page Application so routing reloads only flexible content on this once loaded page.
-* **useParams**: it's the hook which enables reading variables from the path of URL.
+* **useSearchParams**: it's the hook which enables reading search (query) parameters from the path of URL.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
