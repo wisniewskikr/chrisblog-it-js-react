@@ -1,8 +1,9 @@
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from "react-router-dom";
 
 const HelloWorld = () => {
 
-    let { message } = useParams();
+    const [searchParams] = useSearchParams();
+    const message = searchParams.get("message");
 
     return(
         <div>
