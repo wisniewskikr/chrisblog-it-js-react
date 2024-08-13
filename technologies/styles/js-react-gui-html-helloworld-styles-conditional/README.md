@@ -10,7 +10,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World** page
+   * Expected red message **Hello World**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -25,29 +25,18 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to use **style** type **file** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to display some **CSS style** basing on some **condition** in an application type **GUI HTML** based on **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
 * **Style**: Cascading Style Sheets (CSS) is used to format the layout of a webpage.
-* **File**: File CSS is the technique to define the single element in an external CSS file.
+* **Condition**: in this example style is displayed if some condition is fullfiled. If not then style is not displayed.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
-##### Flow
-The following flow takes place in this project:
-1. User via any html browser sends request to application for the content.
-1. Application sends back response to user via html browser with message
-
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
-
-##### Technologies
-This project uses following technologies:
-* **JavaScript**: `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
-* **Node** (section 'Node'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
-* **React framework** (section 'React Framework'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
 
 
 PRECONDITIONS
