@@ -10,7 +10,7 @@ Usage steps:
 1. In a command line tool install nmp packages with `npm install`
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
-   * Expected **Hello World** page
+   * Expected messages: **Hello World 1!**, **Hello World 2!** and **Hello World 3!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -25,27 +25,17 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to create an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. This application consists of **single** HTTP page and displays **Hello World** message.
+The goal of this project is to present how to implement **iteration (loop "for")** in an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
+* **Iteration (loop "for")**: it means that list of objects is displayed instead of only one object.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 
-##### Flow
-The following flow takes place in this project:
-1. User via any html browser sends request to application for the content.
-1. Application sends back response to user via html browser with message
-
 ##### Launch
 To launch this application please make sure that the **Preconditions** are met and then follow instructions from **Usage** section.
-
-##### Technologies
-This project uses following technologies:
-* **JavaScript**: `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
-* **Node** (section 'Node'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
-* **React framework** (section 'React Framework'): `https://docs.google.com/document/d/1wtk8TTIDLsHSvtyUp7uCk-pOKTpmNwMANRGmBNaoBpc/edit?usp=sharing`
 
 
 PRECONDITIONS
