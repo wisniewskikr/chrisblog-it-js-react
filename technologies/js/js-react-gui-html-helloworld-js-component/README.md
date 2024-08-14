@@ -11,7 +11,6 @@ Usage steps:
 1. In a command line tool start application with `npm start`
 1. In a http browser (e.g. Chrome) visit `http://localhost:3000`
    * Expected message **Hello World!**
-   * Expected console log **Hello World!**
 1. Clean up environment 
      * In a command line tool stop application with `ctrl + C`
 
@@ -26,11 +25,11 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to implement **global JavaScript** in an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
+The goal of this project is to present how to implement **JavaScript** in a React **Component** in an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework.
 
 ##### Terminology
 Terminology explanation:
-* **Global JavaScript**: it means that all JavaScript files and libraries necessary in an application are loaded globally on the beginning - before loading all components.
+* **JavaScript in a React Component**: it means that JavaScript file is called inside a React Component after this Component is rendered.
 * **JavaScript**: is a scripting or programming language that allows you to implement complex features on web pages or to implement web applications.
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
