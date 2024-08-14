@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      Hello World!
+      <span id="message">Replaced Text</span>
     </div>
   );
 

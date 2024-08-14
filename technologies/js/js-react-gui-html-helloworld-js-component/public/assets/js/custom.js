@@ -1,1 +1,2 @@
-console.log("Hello World!");
+const spanElement = document.getElementById("message");
+spanElement.textContent = "Hello World!";
