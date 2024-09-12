@@ -31,7 +31,7 @@ DESCRIPTION
 -----------
 
 ##### Goal
-The goal of this project is to present how to **dockerize** an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Dockerize means that application is installed on Docker instead directly on computer.
+The goal of this project is to present how to **dockerize** an **Express server** with an application type **GUI HTML** in **JavaScript** programming language with usage **react** framework. Dockerize means that application is installed on Docker instead directly on computer.
 
 ##### Terminology
 Terminology explanation:
@@ -39,6 +39,7 @@ Terminology explanation:
 * **GUI HTML**: it's an abbreviation for Graphical User Interface. It enables user to interact with application. GUI HTML means that user interacts with application via html web pag.
 * **React framework**: It’s used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.
 * **Docker**: this tool enables separating applications from computer. It means that instead installing application directly on computer we install them on Docker. In this way we can easly add, remove and modify any application without changing our computer system.
+* **Express server**: An Express server is a lightweight, fast, and flexible web server framework built on Node.js. It simplifies the process of creating web applications and APIs by providing a set of robust features for handling HTTP requests, routing, middleware, and more. Express is widely used for building RESTful APIs and single-page web applications.
 
 ##### Flow
 The following flow takes place in this project:
